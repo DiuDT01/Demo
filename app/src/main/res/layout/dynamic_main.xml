@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    tools:context=".MainDynamicFg">
+    <TextView
+        android:id="@+id/tv"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:background="@drawable/home"
+        android:text="EXAMPLE FOR DYNAMIC FRAGMENT"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/btA"
+        android:text="Add FRAG_A"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btB"
+        android:text="Add FRAG_B"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_toRightOf="@id/btA"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:layout_below="@id/btA"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
